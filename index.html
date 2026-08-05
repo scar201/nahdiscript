@@ -1,0 +1,817 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<meta name="theme-color" content="#FF7A00">
+
+<meta property="og:title" content="NahdiScript | Modern Programming Language">
+
+<meta property="og:description"
+content="NahdiScript is a modern programming language focused on simplicity, readability and safety.">
+
+<meta property="og:image"
+content="assets/images/logo.png">
+
+<meta property="og:type"
+content="website">
+
+
+<meta name="twitter:card"
+content="summary_large_image">
+
+<meta name="twitter:title"
+content="NahdiScript">
+
+<meta name="twitter:description"
+content="Write less. Understand more.">
+
+<meta name="twitter:image"
+content="assets/images/logo.png">
+    <!-- ========================= -->
+    <!-- Meta -->
+    <!-- ========================= -->
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>
+NahdiScript | Modern Programming Language
+</title>
+
+    <meta name="description"
+          content="NahdiScript is a modern programming language focused on simplicity, readability and safety.">
+
+    <meta name="keywords"
+          content="NahdiScript, Programming Language, Compiler, Interpreter">
+
+    <meta name="author"
+          content="Abdulaziz ALnahdi">
+
+    <link rel="icon"
+          href="assets/images/favicon.ico">
+
+    <!-- Fonts -->
+
+    <link rel="preconnect"
+          href="https://fonts.googleapis.com">
+
+    <link rel="preconnect"
+          href="https://fonts.gstatic.com"
+          crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;600&display=swap"
+          rel="stylesheet">
+
+    <!-- CSS -->
+
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/home.css">
+    <link rel="stylesheet" href="assets/css/animations.css">
+    <link rel="stylesheet" href="assets/css/responsive.css">
+    <link rel="stylesheet" href="assets/css/footer.css">
+
+</head>
+
+<body>
+
+<!-- ========================= -->
+<!-- Background -->
+<!-- ========================= -->
+
+<div class="background-grid"></div>
+
+<canvas id="particles"></canvas>
+
+<!-- ========================= -->
+<!-- Navbar -->
+<!-- ========================= -->
+
+<header class="navbar">
+
+    <div class="container navbar-container">
+
+        <a class='logo' href='/'>
+
+            <img src="assets/images/logo.png"
+                 alt="NahdiScript">
+
+            <span>NahdiScript</span>
+
+        </a>
+
+        <nav class="nav-links">
+
+            <a href='/'>Home</a>
+
+            <a href='/docs'>Documentation</a>
+
+            <a href='/roadmap'>Roadmap</a>
+
+            <a href='/download'>Download</a>
+
+            <a href='/community'>Community</a>
+
+        </nav>
+
+        <div class="nav-buttons">
+
+            <a href="https://github.com"
+               class="github-btn"
+               target="_blank">
+
+                GitHub
+
+            </a>
+
+            <a class='start-btn' href='/docs'>
+
+                Get Started
+
+            </a>
+
+        </div>
+
+    </div>
+
+</header>
+
+<!-- ========================= -->
+<!-- Hero -->
+<!-- ========================= -->
+
+<main>
+
+<section class="hero">
+
+<div class="container hero-container">
+
+<div class="hero-left">
+
+<div class="hero-badge">
+
+🚀 Version 0.1 Preview
+
+</div>
+
+<h1>
+
+Write Less.<br>
+
+<span>Understand More.</span>
+
+</h1>
+
+<p>
+
+NahdiScript is a modern programming language
+focused on simplicity,
+readability,
+and safety.
+
+Designed to help developers
+write clean code with fewer bugs.
+
+</p>
+
+<div class="hero-buttons">
+
+<a class='primary-btn' href='/docs'>
+
+🚀 Get Started
+
+</a>
+
+<a class='secondary-btn' href='/docs'>
+
+📚 Documentation
+
+</a>
+
+</div>
+
+<div class="hero-info">
+
+    <div>
+
+        <h3>👤 Creator</h3>
+
+        <p>
+
+            <a href="https://cipher0x.netlify.app/"
+               target="_blank"
+               rel="noopener noreferrer"
+               class="creator-link">
+
+                Abdulaziz ALnahdi
+
+            </a>
+
+        </p>
+
+    </div>
+
+    <div>
+
+        <h3>🌍 Country</h3>
+
+        <p>Made in Saudi Arabia 🇸🇦</p>
+
+    </div>
+
+</div>
+
+<!-- ========================= -->
+<!-- Fake Editor -->
+<!-- ========================= -->
+
+<div class="hero-right">
+
+<div class="editor">
+
+<div class="editor-header">
+
+<div class="editor-buttons">
+
+<span class="red"></span>
+<span class="yellow"></span>
+<span class="green"></span>
+
+</div>
+
+<p>NahdiScript.ns</p>
+
+</div>
+
+<div class="editor-body">
+
+<div class="editor-toolbar">
+
+    <div class="editor-left">
+
+        <img src="assets/images/logo.png" class="editor-logo">
+
+        <span class="file-name">variables.ns</span>
+
+    </div>
+
+    <div class="editor-right">
+
+        <button id="run-btn">
+             Run
+        </button>
+
+    </div>
+
+</div>
+
+    <div class="editor-content">
+
+        <div class="line-numbers" id="line-numbers">
+            1
+        </div>
+
+        <pre id="typing-code" class="code-editor"></pre>
+
+    </div>
+
+    <div class="terminal">
+
+        <div class="terminal-title">
+
+            Output
+
+        </div>
+
+        <pre id="typing-output"></pre>
+
+    </div>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+<!-- ======================================== -->
+<!-- About -->
+<!-- ======================================== -->
+
+<section class="about" id="about">
+
+    <div class="container">
+
+        <div class="section-title">
+
+            <span>ABOUT</span>
+
+            <h2>The Story Behind NahdiScript</h2>
+
+            <p>
+
+                NahdiScript is a modern programming language built to make
+                programming simpler, cleaner, and easier to understand.
+
+                It focuses on readability, performance, and developer
+                experience while providing a solid foundation for future
+                features like null safety, strict typing, and a powerful
+                standard library.
+
+            </p>
+
+        </div>
+
+        <div class="about-grid">
+
+            <div class="about-card">
+
+                <h3>👤 Creator</h3>
+
+                <p>
+
+                    <a href="https://cipher0x.netlify.app/"
+                       target="_blank"
+                       rel="noopener noreferrer"
+                       class="creator-link">
+
+                        Abdulaziz ALnahdi
+
+                    </a>
+
+                </p>
+
+            </div>
+
+            <div class="about-card">
+
+                <h3>🌍 Country</h3>
+
+                <p>Made in Saudi Arabia 🇸🇦</p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- ======================================== -->
+<!-- Features -->
+<!-- ======================================== -->
+
+<section class="features">
+
+    <div class="container">
+
+        <div class="section-title">
+
+            <span>FEATURES</span>
+
+            <h2>Why NahdiScript?</h2>
+
+        </div>
+
+        <div class="features-grid">
+
+            <div class="feature-card">
+
+                <h3>⚡ Simple Syntax</h3>
+
+                <p>Easy to learn and easy to read.</p>
+
+            </div>
+
+            <div class="feature-card">
+
+                <h3>🛡 Null Safety</h3>
+
+                <p>Coming Soon</p>
+
+            </div>
+
+            <div class="feature-card">
+
+                <h3>🧠 Strict Typing</h3>
+
+                <p>Coming Soon</p>
+
+            </div>
+
+            <div class="feature-card">
+
+                <h3>🚀 Fast Interpreter</h3>
+
+                <p>Optimized for speed.</p>
+
+            </div>
+
+            <div class="feature-card">
+
+                <h3>💻 VS Code Support</h3>
+
+                <p>Extension Available.</p>
+
+            </div>
+
+            <div class="feature-card">
+
+                <h3>📦 Package Manager</h3>
+
+                <p>Coming Soon</p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- ======================================== -->
+<!-- Syntax -->
+<!-- ======================================== -->
+
+<section class="syntax">
+
+<div class="container">
+
+<div class="section-title">
+
+<span>SYNTAX</span>
+
+<h2>Simple Code</h2>
+
+</div>
+
+<div class="code-window">
+
+<div class="editor-header">
+
+<div class="editor-buttons">
+
+<span class="red"></span>
+
+<span class="yellow"></span>
+
+<span class="green"></span>
+
+</div>
+
+<p>example.ns</p>
+
+</div>
+
+<pre><code>
+
+let name = "Nahdi"
+
+fn hello() {
+
+    print(name)
+
+}
+
+hello()
+
+</code></pre>
+
+</div>
+
+<div class="center">
+
+<a class='primary-btn' href='/docs'>
+
+Try More Examples
+
+</a>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- ======================================== -->
+<!-- Documentation -->
+<!-- ======================================== -->
+
+<section class="documentation">
+
+<div class="container">
+
+<div class="section-title">
+
+<span>DOCUMENTATION</span>
+
+<h2>Learn NahdiScript</h2>
+
+</div>
+
+<div class="docs-grid">
+
+<div class="doc-card">
+
+Variables
+
+</div>
+
+<div class="doc-card">
+
+Functions
+
+</div>
+
+<div class="doc-card">
+
+If / Else
+
+</div>
+
+<div class="doc-card">
+
+While
+
+</div>
+
+<div class="doc-card">
+
+Operators
+
+</div>
+
+<div class="doc-card">
+
+Built-in Functions
+
+<br><br>
+
+<small>Coming Soon</small>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+<!-- ======================================== -->
+<!-- Roadmap -->
+<!-- ======================================== -->
+
+<section class="roadmap" id="roadmap">
+
+    <div class="container">
+
+        <div class="section-title">
+
+            <span>ROADMAP</span>
+
+            <h2>The Future of NahdiScript</h2>
+
+            <p>Our journey to build a modern programming language.</p>
+
+        </div>
+
+        <div class="roadmap-grid">
+
+            <div class="roadmap-card completed">
+
+                <h3>✅ v0.1</h3>
+
+                <ul>
+                    <li>Lexer</li>
+                    <li>Parser</li>
+                    <li>AST</li>
+                    <li>Interpreter</li>
+                    <li>VS Code Extension</li>
+                </ul>
+
+            </div>
+
+            <div class="roadmap-card">
+
+                <h3>🔄 v0.2</h3>
+
+                <ul>
+                    <li>const</li>
+                    <li>Arrays</li>
+                    <li>Comments</li>
+                    <li>Error System</li>
+                </ul>
+
+            </div>
+
+            <div class="roadmap-card">
+
+                <h3>⏳ v0.5</h3>
+
+                <ul>
+                    <li>Modules</li>
+                    <li>Package Manager</li>
+                    <li>Debugger</li>
+                </ul>
+
+            </div>
+
+            <div class="roadmap-card">
+
+                <h3>🎉 v1.0</h3>
+
+                <ul>
+                    <li>Compiler</li>
+                    <li>Standard Library</li>
+                    <li>Windows</li>
+                    <li>Linux</li>
+                    <li>macOS</li>
+                </ul>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- ======================================== -->
+<!-- Download -->
+<!-- ======================================== -->
+
+<section class="download" id="download">
+
+    <div class="container">
+
+        <div class="section-title">
+
+            <span>DOWNLOAD</span>
+
+            <h2>Get NahdiScript</h2>
+
+        </div>
+
+        <div class="download-grid">
+
+            <div class="download-card">
+
+                <h3>💻 VS Code Extension</h3>
+
+                <p>Available Soon</p>
+
+            </div>
+
+            <div class="download-card">
+
+                <h3>🪟 Windows</h3>
+
+                <p>Coming Soon</p>
+
+            </div>
+
+            <div class="download-card">
+
+                <h3>🐧 Linux</h3>
+
+                <p>Coming Soon</p>
+
+            </div>
+
+            <div class="download-card">
+
+                <h3>🍎 macOS</h3>
+
+                <p>Coming Soon</p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- ======================================== -->
+<!-- Community -->
+<!-- ======================================== -->
+
+<section class="community" id="community">
+
+    <div class="container">
+
+        <div class="section-title">
+
+            <span>COMMUNITY</span>
+
+            <h2>Join the Community</h2>
+
+            <p>Follow the development of NahdiScript.</p>
+
+        </div>
+
+        <div class="community-grid">
+
+            <a href="https://github.com/" target="_blank" class="community-card">
+
+                <h3>GitHub</h3>
+
+                <p>Coming Soon</p>
+
+            </a>
+
+            <a href="https://discord.gg/" target="_blank" class="community-card">
+
+                <h3>Discord</h3>
+
+                <p>Join Community</p>
+
+            </a>
+
+            <a href="https://x.com/" target="_blank" class="community-card">
+
+                <h3>X (Twitter)</h3>
+
+                <p>Follow Updates</p>
+
+            </a>
+
+            <a href="mailto:contact@nahdiscript.dev" class="community-card">
+
+                <h3>Email</h3>
+
+                <p>Contact Us</p>
+
+            </a>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- ======================================== -->
+<!-- Footer -->
+<!-- ======================================== -->
+
+<footer class="footer">
+
+    <div class="container footer-container">
+
+        <div>
+
+            <h2>NahdiScript</h2>
+
+            <p>
+                Write Less. Understand More.
+            </p>
+
+        </div>
+
+        <div>
+
+            <p>
+
+                © 2026 NahdiScript
+
+            </p>
+
+            <p>
+
+                Created by
+
+                <a href="https://cipher0x.netlify.app/"
+                   target="_blank"
+                   class="creator-link">
+
+                    Abdulaziz ALnahdi
+
+                </a>
+
+            </p>
+
+            <p>
+
+                Made in Saudi Arabia 🇸🇦
+
+            </p>
+
+        </div>
+
+    </div>
+
+</footer>
+
+</main>
+
+<script src="assets/js/main.js"></script>
+<script src="assets/js/navbar.js"></script>
+<script src="assets/js/typing.js"></script>
+<script src="assets/js/particles.js"></script>
+<script src="assets/js/scroll.js"></script>
+<script src="assets/js/particles.js"></script>
+<script src="assets/js/navbar.js"></script>
+<script src="assets/js/scroll.js"></script>
+
+</body>
+</html>
