@@ -1,0 +1,276 @@
+/* ==========================================================
+   NahdiScript Responsive
+========================================================== */
+
+/* =========================
+   Large Screens
+========================= */
+
+@media (max-width:1200px){
+
+    .hero-container{
+
+        gap:50px;
+
+    }
+
+}
+
+/* =========================
+   Tablet
+========================= */
+
+@media (max-width:992px){
+
+    section{
+
+        padding:90px 0;
+
+    }
+
+    .hero{
+
+        min-height:auto;
+
+        padding-top:130px;
+
+    }
+
+    .hero-container{
+
+        grid-template-columns:1fr;
+
+        text-align:center;
+
+    }
+
+    .hero-left{
+
+        order:1;
+
+    }
+
+    .hero-right{
+
+        order:2;
+
+    }
+
+    .hero-left p{
+
+        margin:auto;
+
+    }
+
+    .hero-buttons{
+
+        justify-content:center;
+
+    }
+
+    .hero-info{
+
+        justify-content:center;
+
+    }
+
+    .editor{
+
+        max-width:100%;
+
+    }
+
+    .navbar-container{
+
+        flex-wrap:wrap;
+
+        height:auto;
+
+        padding:15px 0;
+
+        gap:20px;
+
+    }
+
+    .nav-links{
+
+        width:100%;
+
+        justify-content:center;
+
+        flex-wrap:wrap;
+
+        gap:20px;
+
+    }
+
+    .nav-buttons{
+
+        justify-content:center;
+
+        width:100%;
+
+    }
+
+}
+
+/* =========================
+   Mobile
+========================= */
+
+@media (max-width:768px){
+
+    .hero-left h1{
+
+        font-size:48px;
+
+    }
+
+    .section-title h2{
+
+        font-size:36px;
+
+    }
+
+    .hero-info{
+
+        flex-direction:column;
+
+    }
+
+    .hero-info div{
+
+        width:100%;
+
+    }
+
+    .about-grid,
+    .features-grid,
+    .docs-grid,
+    .roadmap-grid,
+    .download-grid,
+    .community-grid{
+
+        grid-template-columns:1fr;
+
+    }
+
+    .editor-body{
+
+        padding:20px;
+
+    }
+
+    .editor-toolbar{
+
+        flex-direction:column;
+
+        align-items:flex-start;
+
+        gap:15px;
+
+    }
+
+    #run-btn{
+
+        width:100%;
+
+        justify-content:center;
+
+    }
+
+    .footer-container{
+
+        flex-direction:column;
+
+        text-align:center;
+
+    }
+
+}
+
+/* =========================
+   Small Phones
+========================= */
+
+@media (max-width:480px){
+
+    .hero-left h1{
+
+        font-size:38px;
+
+    }
+
+    .hero-left p{
+
+        font-size:16px;
+
+    }
+
+    .primary-btn,
+    .secondary-btn,
+    .github-btn,
+    .start-btn{
+
+        width:100%;
+
+    }
+
+    .hero-buttons{
+
+        flex-direction:column;
+
+    }
+
+    .logo img{
+
+        width:120px;
+
+    }
+
+    .section-title h2{
+
+        font-size:30px;
+
+    }
+
+    .editor-body pre{
+
+        font-size:13px;
+
+    }
+
+    .terminal-output{
+
+        font-size:14px;
+
+    }
+
+}
+@media(max-width:1200px){
+
+    .community-grid{
+
+        grid-template-columns:repeat(2,1fr);
+
+    }
+
+}
+
+
+@media(max-width:768px){
+
+    .community-hero h1{
+
+        font-size:42px;
+
+    }
+
+
+    .community-grid{
+
+        grid-template-columns:1fr;
+
+    }
+
+}
